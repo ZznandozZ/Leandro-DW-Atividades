@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(226, 43, 43);
+    
+    justify-content: center;
+          
+}
+img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    
+}
+body {
+    background-color: aquamarine;
+}
+
+a {
+    background-color: rebeccapurple;
+    color: red;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+a:hover{
+    background-color: aliceblue;
+    color: dodgerblue;
+    outline: 1px solid dodgerblue;
+}
