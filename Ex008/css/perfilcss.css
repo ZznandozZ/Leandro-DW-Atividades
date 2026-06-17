@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Titulo {
+    text-align: center;
+    
+}
+
+:root {
+    --font: white;
+    --bgMenu: #333;
+    --bgBody: #f1f1f1;
+    --btnHover: #aaa;
+
+}
+
+.claro {
+    --font: rgb(20, 19, 19);
+    --bgMenu: #fffbfb;
+    --bgBody: #130b0b;
+    --btnHover: #f5e3e3;
+}
+
+label [for="btnMenu"] {
+    height: 50px;
+    flex: 1;
+    background-color: var(--bgMenu);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: var(--font);
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bgMenu);
+}
+
+.container a {
+    padding: 20px;
+   
+   
+    
+}
+.fundo {
+    background-color: #aaa;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    
+  
+
+}
+
+nav {
+  
+    
+ 
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+    padding: 16px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid red;
+    flex: 1;
+}
+
+nav a:hover {
+    background-color: var(--btnHover);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col75 {
+    width: 75%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 4px;
+    border: 1px solid var(--bgMenu);
+    width: 100%;
+    padding: 12px;
+}
+
+textarea {
+    height: 200px;
+}
+
+@media (max-width: 800px){
+    label[for="btmMenu"] {
+    display: flex;
+    }    
+}
+
+.active {
+    display: flex;
+}
+nav {
+    display: none;
+}
+nav {
+    flex-direction: column;
+}
+.row {
+    flex-direction: column;
+}
+
+.col75,
+.col25 {
+    width: 100%;
+}
