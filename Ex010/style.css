@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgSite);
+    font-family: sans-serif;
+    text-align: center;
+}
+nav {
+    
+}
+    
+
+#troca {
+    width: 64px;
+    height: 24px;
+    border: 1px solid black;
+    background-color: var(--bgNav);
+    border-radius: 50px;
+    margin: 24px auto;
+    position: relative;
+    right: 3%;
+    top: 1%;
+}
+
+#troca button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: -3%;
+    top: 50%;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: var(--toggle) no-repeat center center/cover;
+}

@@ -9,10 +9,15 @@
     --bgNav: #333;
     --bgSite: #f1f1f1;
     --bgHover: #aaa;
+    --toggle: url('Ex008/forma-de-fase-da-lua-crescente-com-duas-estrelas.png')
 }
 
-.claro {
-    --font: rgb(20, 19, 19)
+.light {
+    --bgNav: #177002;
+    --fonte: rgb(255, 255, 0);
+    --bgSite: #2b9000;
+    --bgHover: #031cfd;
+    --toggle: ulr('url(../brilho-do-sol.png)')
 }
 body {
     background-color: var(--bgSite);
@@ -23,6 +28,38 @@ header {
     background-color: var(--fonte);
     padding: 30px;
     text-align: center;
+}
+
+#troca {
+    width: 64px;
+    height: 24px;
+    border: 1px solid rgba(179, 168, 168, 0.034);
+    background-color: var(--bgNav);
+    border-radius: 50px;
+    margin: 24px auto;
+    position: absolute;
+    right: 3%;
+    top: 1%;
+}
+
+#troca button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: -3%;
+    top: 50%;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: var(--toggle) no-repeat center center/cover;
+}
+
+#troca button:hover {
+    outline: 2px solid var(--bgNav);
+}
+
+.light #troca button {
+    left: 50%;
 }
 
 label [for=btn-menu] {
